@@ -4,9 +4,9 @@ services:
   web:
     image: nginx:latest
     ports:
-      - "8080:80"
+      - "9090:80"
   db:
     image: postgres:15
     environment:
-      POSTGRES_USER: admin
-      POSTGRES_PASSWORD: mypassword
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
