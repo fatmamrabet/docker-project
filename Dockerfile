@@ -1,6 +1,2 @@
-FROM node:latest
-
-WORKDIR /app
-COPY . .
-RUN apk update
-CMD ["node", "app.js"]
+FROM nginx:alpine
+COPY index.html /usr/share/nginx/html/index.html
