@@ -3,7 +3,7 @@ name: Hello CI
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   sanity-check:
